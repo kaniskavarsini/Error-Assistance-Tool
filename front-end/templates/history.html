@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="StyleSheet" href="{{ url_for('static', filename='history_style.css') }}">        
+        <title>
+            History
+        </title>
+        <link rel="icon" href="{{ url_for('static', filename='img1.png') }}">
+    </head>
+    <body>
+        <h2>History</h2>
+        <div class="table-box">
+                <div class="table-row table-head">
+                    <div class="table-cell first-cell">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Links Opened</p>
+                    </div>
+                </div>
+        
+                {% for row in output_data %}       
+                    <div class="table-row">
+                        <div class="table-cell first-cell">
+                            {% for cell in row %}  
+                                <div class="table-cell">    
+                                    <td>
+                                        <a href="{{cell}}" target="blank">
+                                        {{cell}}
+                                        </a>
+                                    </td>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+        </div>   
+        <a href="{{ url_for('home') }}"><button type="button" class="btn" id=back_button>Back</button></a>
+        <br>
+        </body>

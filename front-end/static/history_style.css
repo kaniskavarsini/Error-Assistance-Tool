@@ -1,0 +1,92 @@
+.table-box
+{
+    margin: 50px auto;
+}
+html {
+    scroll-behavior: smooth;
+   }
+body {
+    background:-webkit-linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    background-attachment:fixed;
+    height:100%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: 'Noto Sans', sans-serif;
+    background: whitesmoke;
+    padding: 12px 0;
+    color: black;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+    height: 30px;
+}
+.table-head{
+    background: -webkit-linear-gradient(left, #6e6e6e, #2e2d2e, #1d1c1c);  
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+.first-cell{
+    text-align: center;
+    padding-left: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+.last-cell{
+    border-right: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+#back_button{
+  margin-left: 10px;
+  height: 30px;
+  line-height: normal;
+}
+h2{
+  margin-top:0;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: #fff;
+}
+
+.btn {
+    background: -webkit-linear-gradient(left, #6e6e6e, #2e2d2e, #1d1c1c);  
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+  }
+
+  .btn:hover{
+    left: 0;
+    background: linear-gradient(250.54deg, #968d8d 0%, #0a0808 100%);
+    background-position: right center;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+  }
+
+
+  

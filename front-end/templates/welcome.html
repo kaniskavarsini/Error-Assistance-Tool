@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <title>Error Assistance Tool</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
+   <link rel="stylesheet" href="{{url_for('static', filename='welcome_style.css')}}">
+   <link rel="icon" href="{{url_for('static', filename='img1.png')}}">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+       <img src="{{url_for('static', filename='img1.png')}}" alt='Logo' class='logo' ALIGN="left"\ style="border-radius: 25px; margin-top: 20px;
+        margin-left:20px;
+        float:left;
+        width: 70px;
+        height: 70px;">
+        <div class="container"><a class="navbar-brand" title="Error Assistance tool" 
+        style="margin-top:10px;color: #fff;font-size:20px; font-family: 'Noto Sans', sans-serif;
+         ">Error assistance tool</a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <button style="font-weight: 700;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 300px;background: -webkit-linear-gradient(left, #6e6e6e, #2e2d2e, #1d1c1c);  
+                    color: #fff;">
+                    <li class="nav-item"><a class="nav-link active" href="{{url_for('login')}}" 
+                     style="color: #fff;">Login</a></li></button>&nbsp; 
+                    <button  style="font-weight: 700;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 300px;background: -webkit-linear-gradient(left, #6e6e6e, #2e2d2e, #1d1c1c);  ">
+                    <li class="nav-item"><a class="nav-link active" href="{{url_for('register')}}" 
+                     style="color: #fff;">register</a></li></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white d-flex masthead" 
+                  style="background-image: linear-gradient(to right, #307586 0%, #3498db 100%); ">
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <br>
+                    <h1 class="text-uppercase" 
+                    style="color: black;    font-family: 'Noto Sans', sans-serif
+                    , cursive;font-size: 85px;font-size: 72px;
+                    ";
+                    >
+                    <strong>Your Coding companion!!</strong></h1>
+                    <br><br>
+                </div>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5" style="color: Black;  font-family: 'Noto Sans', sans-serif;
+                "> Are you stuck with an error and frantically searching for StackOverflow threads? We've got you covered! Hit the register button and solve your errors today. It's free!!!</p>
+                <a class="btn btn-primary btn-xl" role="button" href="{{url_for('register')}}"
+                style="background:-webkit-linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+                background: -webkit-linear-gradient(left, #6e6e6e, #2e2d2e, #1d1c1c);  
+                color:#fff;
+                font-weight: 700;
+                z-index: 25;
+                font-size: 16px;
+                line-height: 40px;
+                height: 60px;
+                width: 250px;
+                text-transform: uppercase;
+                border-radius: 15px;
+                transition: 0.5s ease-in-out;
+                margin-left:5% ;
+                cursor: pointer;
+                font-family: 'Noto Sans', sans-serif; ;
+                align-items: center;">Begin</a>
+            </div>
+        </div>
+    </header>
+    
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="/assets/js/creative.js"></script>
+    <script id="bs-live-reload" data-sseport="63620" data-lastchange="1636879678162" src="/js/livereload.js"></script>
+</body>
+</html>

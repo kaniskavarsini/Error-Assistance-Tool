@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="StyleSheet" href="{{ url_for('static', filename='home_style.css') }}">
+        <title>
+            Homepage
+        </title>
+        <link rel="icon" href="{{ url_for('static', filename='img1.png') }}">
+    </head>
+<body>
+    <header>
+       <nav id="navbar" name="navbar">  
+         <ul>
+           <img src="{{ url_for('static', filename='img1.png') }}" alt='Logo' class='logo' ALIGN="left"\>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            <li><a href="#downFAQ">FAQ</a></li>
+            <li><a href="{{ url_for('history') }}">History</a></li>
+            <li><a href="#down">Upload</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+           <h1><b>Error Assistance Tool</b></h1> 
+        </ul>
+        </nav>
+      </header>
+
+<p class="para"><center><b> {{msg}}!</b></center></p>
+
+<section>  
+  <div class="containerr">
+      <div class="card">
+        <div class="card-header">
+          <img src="{{ url_for('static', filename='img2.jpg') }}" alt="rover" />
+        </div>
+        <div class="card-body">
+          <h4 id="card_heading">
+            Tired of searching solution for your error?
+          </h4>
+          <p id="card_para">Here comes our error assistance tool which automatically fetches related StackOverflow threads of your error
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="{{ url_for('static', filename='img3.jpg') }}" alt="ballons" />
+        </div>
+        <div class="card-body">
+          <h4 id="card_heading">
+              Need to search for the same error again?
+          </h4>
+          <p id="card_para">
+            Our tool comes up with easy way to search for the same error again. "History" will list you all the searches that you have made so far.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="{{ url_for('static', filename='img4.jpg') }}" alt="city" />
+        </div>
+        <div class="card-body">
+          <h4 id="card_heading">
+            Can't find why your code shows error?
+          </h4>
+          <p id="card_para">
+            Upload your file in the "Upload" section and it will detect the error in your code and shows the related StackOverflow threads.
+          </p>
+        </div>
+      </div>
+</section>
+  
+<div id="down">
+  <br><br><br>
+  <h4 id="note">Upload your file here !!!</h4>
+      <div class="upload-container">
+          <br>
+          <form action="{{ url_for('uploader') }}" class="form" method="POST" enctype="multipart/form-data">
+              <div class="file-upload-wrapper" data-text="Select your file!">
+                <input name="file" type="file" class="file-upload-field" value="">
+              </div>
+              <br>
+              <input type="submit">
+            </form>
+      </div>      
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="{{url_for('static',filename='upload.js')}}">
+  </script>
+    
+<div id="downFAQ">
+  <div class="container">
+    <h2 id="heading">Frequently Asked Questions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <a>Where to insert the error file?</a>
+        <div class="content">
+          <p>Select the 'Choose File' button and you will now be able to browse files on our device!</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <a>Which files types are accepted?</a>
+        <div class="content">
+          <p>As of now, files with .py extension are accepted</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <a>Where will the answer be dispayed?</a>
+        <div class="content">
+          <p>You will be redirected to another tab </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <a>What if the search history is full?</a>
+        <div class="content">
+          <p>There is no limit for that. You can have any number of searches!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="{{url_for('home')}}"><button type="button" class="btn" id=back_button>Home</button></a>
+  <script src="{{ url_for('static', filename='faq.js') }}" async defer></script>
+  </div>
+</body>
+</html>
