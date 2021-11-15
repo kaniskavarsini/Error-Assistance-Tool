@@ -38,15 +38,8 @@ def executefile(file_from_user):
     print(error_message)
     if error_message:
         filter_out = error_message.split(":")
-       # print(filter_out)
-       # print(filter_out[0])
-        #json1 = make_request(filter_out[0])
-        #json2 = make_request(filter_out[1])
         json = make_request(error_message)
-        
         urls=get_urls(json)
         return urls,error_message
-       # get_urls(json2)
-       # get_urls(json)
     else:
         return urls,'no error'
