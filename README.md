@@ -15,9 +15,10 @@ This web application detects the errors in your code and searches for related ex
 ###### Back-end languages: Python  
 ###### Back-end framework: Flask
 
-In Back-end folder we have the following files:
-##         - config.cfg
-         - core.py
+## File format
+###### In Back-end folder we have the following files:
+######         - config.cfg
+        - core.py
          - flaskblog.py
          - sql_connection.py
 In Front-end folder we have two folders namely static and templates:
