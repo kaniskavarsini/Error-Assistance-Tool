@@ -15,5 +15,27 @@ This web application detects the errors in your code and searches for related ex
 ###### Back-end languages: Python  
 ###### Back-end framework: Flask
 
-In Back-end we have the following files
-            - 
+In Back-end folder we have the following files:
+         - config.cfg
+         - core.py
+         - flaskblog.py
+         - sql_connection.py
+In Front-end folder we have two folders namely static and templates:
+In static folder we have the following files
+         - faq.js
+         - upload.js
+         - history_style.css
+         - home_style.css
+         - login_style.css
+         - welcome_style.css
+         all images are included here
+In templates folder we have the following files
+         - feedback.html
+         - forgot_password.html
+         - history.html
+         - home.html
+         - login.html
+         - register.html
+         - reset_password.html
+         - welcome.html
+            
