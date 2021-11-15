@@ -22,7 +22,7 @@ This web application detects the errors in your code and searches for related ex
 ######         - flaskblog.py
 ######         - sql_connection.py
 #### In Front-end folder we have two folders namely static and templates:
-##### In static folder we have the following files
+##### In static folder we have the following files(css files and images)
 ######         - faq.js
 ######         - upload.js
 ######         - history_style.css
@@ -30,7 +30,7 @@ This web application detects the errors in your code and searches for related ex
 ######         - login_style.css
 ######         - welcome_style.css
 ######        all images are included here
-##### In templates folder we have the following files
+##### In templates folder we have the following files(html files)
 ######         - feedback.html
 ######         - forgot_password.html
 ######         - history.html
