@@ -47,7 +47,7 @@ def uploader():
                    cursor.execute('insert into search_table (error_msg,search_link,username) values(%s,%s,%s)',(error_msg,i,session['username'],))
                    connection.commit()
                msg=' File uploaded successfully'
-               return redirect(url_for('home'))
+               return redirect(url_for('feedback'))
            else:
                msg='File type not allowed. Check FAQ for more details'
                return render_template('home.html', msg = msg)
