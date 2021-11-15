@@ -17,7 +17,7 @@ This web application detects the errors in your code and searches for related ex
 
 ## File format
 ###### In Back-end folder we have the following files:
-######         - config.cfg
+######                      - config.cfg
 ######         - core.py
 ######         - flaskblog.py
 ######         - sql_connection.py
