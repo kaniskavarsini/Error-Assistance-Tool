@@ -22,7 +22,7 @@ This web application detects the errors in your code and searches for related ex
 ######         - flaskblog.py
 ######         - sql_connection.py
 #### Front-end folder contains two folders namely static and templates:
-##### static folder contains the following files(css and javascript files and images)
+##### static folder contains the following files(css,javascript files and images)
 ######         - faq.js
 ######         - upload.js
 ######         - history_style.css
