@@ -19,7 +19,7 @@ This web application detects the errors in your code and searches for related ex
 #### Back-end folder contains the following files:
 ######         - config.cfg
 ######         - core.py
-######         - flaskblog.py
+######         - app.py
 ######         - sql_connection.py
 #### Front-end folder contains two folders namely static and templates:
 ##### static folder contains the following files(css,javascript files and images)
