@@ -16,13 +16,13 @@ This web application detects the errors in your code and searches for related ex
 ###### Back-end framework: Flask
 
 ## File format
-#### In Back-end folder we have the following files:
+#### Back-end folder contains the following files:
 ######         - config.cfg
 ######         - core.py
 ######         - flaskblog.py
 ######         - sql_connection.py
-#### In Front-end folder we have two folders namely static and templates:
-##### In static folder we have the following files(css files and images)
+#### Front-end folder contains two folders namely static and templates:
+##### static folder contains the following files(css files and images)
 ######         - faq.js
 ######         - upload.js
 ######         - history_style.css
@@ -30,7 +30,7 @@ This web application detects the errors in your code and searches for related ex
 ######         - login_style.css
 ######         - welcome_style.css
 ######        all images are included here
-##### In templates folder we have the following files(html files)
+##### templates folder contains the following files(html files)
 ######         - feedback.html
 ######         - forgot_password.html
 ######         - history.html
