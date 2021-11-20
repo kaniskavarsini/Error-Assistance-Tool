@@ -7,6 +7,7 @@ from flask_mail import Mail, Message
 from itsdangerous import URLSafeTimedSerializer, SignatureExpired,BadSignature
 import re, os
 
+
 app = Flask(__name__)
 app.secret_key = 'drgh45dfh45yhr5y4y345sdfh'
 s = URLSafeTimedSerializer(app.config['SECRET_KEY'])
